@@ -19,7 +19,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 # Setup for Option 2: Building the Image with the Model included
 ARG MODEL_NAME=""
 ARG TOKENIZER_NAME=""
-ARG BASE_PATH="/runpod-volume"
+ARG BASE_PATH="/model-cache"
 ARG QUANTIZATION=""
 ARG MODEL_REVISION=""
 ARG TOKENIZER_REVISION=""
