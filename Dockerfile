@@ -17,7 +17,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
     python3 -m pip install --upgrade -r /requirements.txt
 
 # Setup for Option 2: Building the Image with the Model included
-ARG MODEL_NAME=""
+ARG MODEL_NAME="cyankiwi/Qwen3.5-35B-A3B-AWQ-4bit"
 ARG TOKENIZER_NAME=""
 ARG BASE_PATH="/model-cache"
 ARG QUANTIZATION=""
